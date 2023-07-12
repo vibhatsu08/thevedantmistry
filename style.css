@@ -13,6 +13,9 @@
     --yellow-color: #FFB627;
     --orange-color: #FFA737;
     --blue-purple-color: #7161EF;
+    --ongoing-color: #ED6A5A;
+    --completed-color: #BCED09;
+    --github-link-color: #FFB627;
 }
 #main-container {
     display: flex;
@@ -268,4 +271,115 @@
     border-radius: 0.5rem;
     width: max-content;
     margin-top: 0.2rem;
+}
+
+
+#projects-page {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--white-color);
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+#projects-page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#projects-page-header-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--black-color);
+}
+#projects-page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.projects-page-body-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+}
+.projects-page-body-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    background-color: var(--black-color);
+}
+.projects-page-body-center-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 800;
+    color: var(--white-color);
+    width: 90%;
+    height: 100vh;
+    overflow-y: auto;
+}
+.projects-page-tags {
+    display: inline-flex;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    margin-top: 0.2rem;
+}
+.projects-body-project {
+    height: max-content;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+.projects-body-project-image {
+    margin: auto;
+    width: 100%;
+}
+.projects-body-project-image > img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+.projects-body-project-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black-color);
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+.projects-body-project-description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--black-color);
+}
+.projects-body-project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.projects-body-project-link > a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--black-color);
+    color: var(--github-link-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 100000px;
 }
