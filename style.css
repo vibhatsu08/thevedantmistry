@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --black-color: #01110A;
+    --white-color: #EDF2F4;
+    --yellow-color: #FFB627;
+    --orange-color: #FFA737;
+    --blue-purple-color: #7161EF;
+}
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#container {
+    width: 30vw;
+}
+#welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black-color);
+}
+#welcome-page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+#welcome-page-header-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+#welcome-page-header-image > img{
+    width: 8rem;
+}
+#welcome-page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    position: relative;
+}
+.welcome-page-body {
+    padding: 1rem;
+}
+.welcome-page-body-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+}
+.location-text {
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.yellow-circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: var(--yellow-color);
+}
+.welcome-page-body-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.welcome-page-body-center-container {
+    text-align: center;
+    font-weight: 800;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+.center-name {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.center-name-name {
+    font-size: 4.5rem;
+}
+.center-me-one, .center-me-two {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.center-me-one {
+    color: var(--blue-purple-color);
+}
+.center-me-two {
+    color: var(--orange-color);
+}
+.welcome-page-body-center-container > span {
+    display: block;
+}
+.top-row {
+    position: absolute;
+    top: 0;
+}
+.bottom-row {
+    position: absolute;
+    bottom: 0;
+}
