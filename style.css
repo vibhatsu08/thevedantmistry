@@ -14,8 +14,8 @@
     --orange-color: #FFA737;
     --blue-purple-color: #7161EF;
     --ongoing-color: #ED6A5A;
-    --completed-color: #BCED09;
-    --github-link-color: #FFB627;
+    --completed-color: #2DD881;
+    --github-link-color: #7161EF;
 }
 #main-container {
     display: flex;
@@ -42,10 +42,14 @@
     flex-direction: column;
     margin-top: 4rem;
 }
-#welcome-page-header-text {
+
+.section-header-text {
     font-size: 3.5rem;
     font-weight: 800;
     text-transform: capitalize;
+}
+
+#welcome-page-header-text {
     color: var(--white-color);
 }
 #welcome-page-header-image > img{
@@ -120,9 +124,6 @@
     flex-direction: column;
 }
 #about-me-page-header-text {
-    font-size: 3.5rem;
-    font-weight: 800;
-    text-transform: capitalize;
     color: var(--black-color);
 }
 #about-me-page-body {
@@ -181,9 +182,6 @@
     flex-direction: column;
 }
 #skills-page-header-text {
-    font-size: 3.5rem;
-    font-weight: 800;
-    text-transform: capitalize;
     color: var(--white-color);
 }
 #skills-page-body {
@@ -243,9 +241,6 @@
     flex-direction: column;
 }
 #projects-page-header-text {
-    font-size: 3.5rem;
-    font-weight: 800;
-    text-transform: capitalize;
     color: var(--black-color);
 }
 #projects-page-body {
@@ -262,6 +257,7 @@
     gap: 2rem;
     flex-direction: column;
     background-color: var(--black-color);
+    width: 100%;
     padding: 3rem 1rem;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
@@ -312,10 +308,23 @@
 .projects-body-project-link > a {
     display: inline-block;
     text-decoration: none;
-    background-color: var(--black-color);
-    color: var(--github-link-color);
+    background-color: var(--github-link-color);
+    font-weight: 600;
+    color: var(--white-color);
     padding: 0.5rem 1.5rem;
     border-radius: 100000px;
+    border: 0.2rem solid var(--black-color);
+}
+.projects-body-project-status {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: var(--completed-color);
+    font-weight: 600;
+    color: var(--black-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black-color);
 }
 
 @media screen and (width < 1200px) {
@@ -346,6 +355,6 @@
         margin-top: 4rem;
     }
     .section-header-text {
-
+        font-size: 2.5rem;
     }
 }
