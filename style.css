@@ -13,7 +13,7 @@
     --yellow-color: #FFB627;
     --orange-color: #FFA737;
     --blue-purple-color: #7161EF;
-    --ongoing-color: #ED6A5A;
+    --ongoing-color: #EFC69B;
     --completed-color: #2DD881;
     --github-link-color: #7161EF;
 }
@@ -319,15 +319,30 @@
     display: inline-block;
     text-decoration: none;
     text-transform: capitalize;
-    background-color: var(--completed-color);
     font-weight: 600;
-    color: var(--black-color);
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
-    border: 0.2rem solid var(--black-color);
 }
-
-@media screen and (width < 1200px) {
+.completed {
+    background-color: var(--completed-color);
+    border: 0.2rem solid var(--black-color);
+    color: var(--black-color);
+}
+.ongoing {
+    background-color: var(--ongoing-color);
+    border: 0.2rem solid var(--black-color);
+    color: var(--black-color);
+}
+@media screen and (width > 1000px) {
+    #container {
+        width: 100vw;
+    }
+    .projects-page-body-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (width <= 1000px) {
     #container {
         width: 100vw;
     }
