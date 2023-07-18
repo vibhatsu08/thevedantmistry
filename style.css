@@ -44,7 +44,6 @@
 }
 
 .section-header-text {
-    font-size: 3.5rem;
     font-weight: 800;
     text-transform: capitalize;
 }
@@ -78,11 +77,15 @@
 }
 .welcome-page-body-center-container {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-weight: 800;
     color: var(--white-color);
     background-color: var(--black-color);
     width: 100%;
-    height: max-content;
+    height: 100%;
     padding: 1.5rem;
     border-radius: 0.8rem;
 }
@@ -128,16 +131,17 @@
 }
 #about-me-page-body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     position: relative;
 }
 .about-me-page-body-center {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 1rem;
     width: 100%;
     height: 100%;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
@@ -160,7 +164,6 @@
 .about-me-page-tags {
     background-color: var(--white-color);
     color: var(--black-color);
-    font-size: 1.5rem;
     font-weight: 600;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -193,8 +196,8 @@
 }
 .skills-page-body-center {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -206,17 +209,17 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 2rem;
+    padding: 1rem;
+    gap: 1rem;
     font-weight: 800;
     color: var(--black-color);
-    width: 90%;
+    width: 100%;
     height: 70%;
 }
 .skills-page-tags {
     display: inline-flex;
     background-color: var(--black-color);
     color: var(--white-color);
-    font-size: 1.3rem;
     font-weight: 600;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -245,20 +248,20 @@
 }
 #projects-page-body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     height: max-content;
 }
 .projects-page-body-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 2rem;
     flex-direction: column;
     background-color: var(--black-color);
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 1rem;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 .projects-page-tags {
@@ -341,10 +344,28 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .skills-page-tags {
+        font-size: 3vw;
+    }
+    .section-header-text {
+        font-size: 7vw;
+    }
+    .about-me-page-tags {
+        font-size: 3vw;
+    }
 }
 @media screen and (width <= 1000px) {
     #container {
         width: 100vw;
+    }
+    .skills-page-tags {
+        font-size: 4vw;
+    }
+    .section-header-text {
+        font-size: 10vw;
+    }
+    .about-me-page-tags {
+        font-size: 4vw;
     }
 }
 @media screen and (width < 400px) {
@@ -361,7 +382,6 @@
         text-transform: capitalize;
     }
     #welcome-page-header-text {
-        font-size: 3rem;
         font-weight: 800;
         text-transform: capitalize;
         color: var(--white-color);
@@ -369,7 +389,13 @@
     #projects-page-header {
         margin-top: 4rem;
     }
+    .skills-page-tags {
+        font-size: 5vw;
+    }
     .section-header-text {
-        font-size: 3rem;
+        font-size: 13vw;
+    }
+    .about-me-page-tags {
+        font-size: 5vw;
     }
 }
