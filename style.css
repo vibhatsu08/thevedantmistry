@@ -12,10 +12,10 @@
     --white-color: #EDF2F4;
     --yellow-color: #FFB627;
     --orange-color: #FFA737;
-    --blue-purple-color: #7161EF;
+    --blue-purple-color: #623CEA;
     --ongoing-color: #EFC69B;
     --completed-color: #2DD881;
-    --github-link-color: #7161EF;
+    --github-link-color: #623CEA;
 }
 #main-container {
     display: flex;
@@ -349,19 +349,19 @@
 }
 @media screen and (width < 400px) {
     .center-name {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-transform: capitalize;
     }
     .center-name-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .center-me-one, .center-me-two {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: 600;
         text-transform: capitalize;
     }
     #welcome-page-header-text {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 800;
         text-transform: capitalize;
         color: var(--white-color);
@@ -370,6 +370,6 @@
         margin-top: 4rem;
     }
     .section-header-text {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 }
