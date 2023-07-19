@@ -17,7 +17,7 @@
     --ongoing-color: #EFC69B;
     --completed-color: #68D89B;
     --github-link-color: #7678ED;
-    --leetcode-link-color: #FFA737;
+    --leetcode-link-color: #FF8552;
 }
 #main-container {
     display: flex;
