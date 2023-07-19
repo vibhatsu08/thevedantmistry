@@ -237,10 +237,14 @@
     margin-top: 0.2rem;
 }
 .projects-body-project {
-    height: max-content;
+    height: 100%;
     background-color: var(--black-color);
     border-radius: 1rem;
     padding: 0.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .projects-body-project-image {
     margin: auto;
@@ -265,8 +269,9 @@
 .projects-body-project-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
     flex-direction: row;
+    width: 100%;
     margin-top: 2rem;
 }
 .projects-body-project-link > a {
