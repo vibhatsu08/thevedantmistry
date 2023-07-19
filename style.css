@@ -17,6 +17,7 @@
     --ongoing-color: #EFC69B;
     --completed-color: #68D89B;
     --github-link-color: #7678ED;
+    --leetcode-link-color: #FFA737;
 }
 #main-container {
     display: flex;
@@ -98,6 +99,7 @@
     height: 100%;
     padding: 1.5rem;
     border-radius: 0.8rem;
+    gap: 1rem;
 }
 .center-name {
     font-size: 2.5rem;
@@ -119,6 +121,31 @@
 }
 .welcome-page-body-center-container > span {
     display: block;
+}
+.profile-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+.profile-link {
+    /* padding: 0.6rem 1.2rem; */
+    border-radius: 0.5rem;
+}
+.profile-link > a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.github {
+    background-color: var(--github-link-color);
+    padding: 0.6rem 1.2rem;
+}
+.leetcode {
+    background-color: var(--leetcode-link-color);
+    padding: 0.6rem 1.2rem;
 }
 
 
