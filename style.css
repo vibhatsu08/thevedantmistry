@@ -181,15 +181,14 @@
     height: 100%;
     width: 100%;
     background-color: var(--black-color);
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    gap: 2rem;
+    padding-top: 4rem;
 }
 #projects-page-header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 2rem;
 }
 #projects-page-header-text {
     color: var(--white-color);
