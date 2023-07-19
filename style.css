@@ -8,14 +8,14 @@
 }
 
 :root {
-    --black-color: #01110A;
+    --black-color: #23272b;
     --white-color: #EDF2F4;
     --yellow-color: #FFB627;
     --orange-color: #FFA737;
-    --blue-purple-color: #623CEA;
+    --blue-purple-color: #7678ED;
     --ongoing-color: #EFC69B;
-    --completed-color: #2DD881;
-    --github-link-color: #623CEA;
+    --completed-color: #68D89B;
+    --github-link-color: #7678ED;
 }
 #main-container {
     display: flex;
@@ -25,6 +25,13 @@
 }
 #container {
     width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-section-page {
+    display: block;
 }
 #welcome-page {
     display: flex;
@@ -112,68 +119,10 @@
 }
 
 
-#about-me-page {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--white-color);
-    padding-top: 4rem;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-}
-#about-me-page-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#about-me-page-header-text {
-    color: var(--black-color);
-}
-#about-me-page-body {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    position: relative;
-}
-.about-me-page-body-center {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5rem 1.5rem 0rem 0rem;
-    background-color: var(--black-color);
-}
-.about-me-page-body-center-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-weight: 800;
-    color: var(--white-color);
-    width: 90%;
-    height: 70%;
-}
-.about-me-page-body-center-container > span {
-    display: block;
-}
-.about-me-page-tags {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    font-weight: 600;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-
 #skills-page {
     height: 100vh;
     width: 100%;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     padding-top: 4rem;
     display: grid;
     grid-template-rows: 1fr 4fr;
@@ -185,7 +134,7 @@
     flex-direction: column;
 }
 #skills-page-header-text {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 #skills-page-body {
     display: flex;
@@ -202,7 +151,7 @@
     width: 100%;
     height: 100%;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
 }
 .skills-page-body-center-container {
     display: flex;
@@ -212,14 +161,14 @@
     padding: 1rem;
     gap: 1rem;
     font-weight: 800;
-    color: var(--black-color);
+    color: var(--white-color);
     width: 100%;
     height: 70%;
 }
 .skills-page-tags {
     display: inline-flex;
-    background-color: var(--black-color);
-    color: var(--white-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
     font-weight: 600;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -229,10 +178,9 @@
 
 
 #projects-page {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: var(--white-color);
-    padding-top: 4rem;
+    background-color: var(--black-color);
     display: grid;
     grid-template-rows: 1fr 4fr;
     gap: 2rem;
@@ -244,7 +192,7 @@
     flex-direction: column;
 }
 #projects-page-header-text {
-    color: var(--black-color);
+    color: var(--white-color);
 }
 #projects-page-body {
     display: flex;
@@ -259,15 +207,15 @@
     align-items: flex-start;
     gap: 2rem;
     flex-direction: column;
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     width: 100%;
     padding: 1rem;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 .projects-page-tags {
     display: inline-flex;
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
     font-size: 1.3rem;
     font-weight: 600;
     padding: 0.5rem;
@@ -277,7 +225,7 @@
 }
 .projects-body-project {
     height: max-content;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
     border-radius: 1rem;
     padding: 0.7rem;
 }
@@ -292,14 +240,14 @@
 .projects-body-project-header {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--black-color);
+    color: var(--white-color);
     text-transform: capitalize;
     margin-top: 1rem;
 }
 .projects-body-project-description {
     font-size: 1.2rem;
     font-weight: 300;
-    color: var(--black-color);
+    color: var(--white-color);
 }
 .projects-body-project-info {
     display: flex;
@@ -313,10 +261,9 @@
     text-decoration: none;
     background-color: var(--github-link-color);
     font-weight: 600;
-    color: var(--white-color);
+    color: var(--black-color);
     padding: 0.5rem 1.5rem;
     border-radius: 100000px;
-    border: 0.2rem solid var(--black-color);
 }
 .projects-body-project-status {
     display: inline-block;
@@ -328,12 +275,10 @@
 }
 .completed {
     background-color: var(--completed-color);
-    border: 0.2rem solid var(--black-color);
     color: var(--black-color);
 }
 .ongoing {
     background-color: var(--ongoing-color);
-    border: 0.2rem solid var(--black-color);
     color: var(--black-color);
 }
 @media screen and (width > 1000px) {
@@ -350,22 +295,21 @@
     .section-header-text {
         font-size: 7vw;
     }
-    .about-me-page-tags {
-        font-size: 3vw;
-    }
 }
 @media screen and (width <= 1000px) {
     #container {
         width: 100vw;
+    }
+    .center-me-one, .center-me-two {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: capitalize;
     }
     .skills-page-tags {
         font-size: 4vw;
     }
     .section-header-text {
         font-size: 10vw;
-    }
-    .about-me-page-tags {
-        font-size: 4vw;
     }
 }
 @media screen and (width < 400px) {
@@ -377,7 +321,7 @@
         font-size: 2rem;
     }
     .center-me-one, .center-me-two {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 600;
         text-transform: capitalize;
     }
@@ -386,16 +330,10 @@
         text-transform: capitalize;
         color: var(--white-color);
     }
-    #projects-page-header {
-        margin-top: 4rem;
-    }
     .skills-page-tags {
         font-size: 5vw;
     }
     .section-header-text {
         font-size: 13vw;
-    }
-    .about-me-page-tags {
-        font-size: 5vw;
     }
 }
