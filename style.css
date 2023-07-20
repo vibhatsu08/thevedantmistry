@@ -18,6 +18,7 @@
     --completed-color: #68D89B;
     --github-link-color: #7678ED;
     --leetcode-link-color: #FF8552;
+    --purple-color: #5F4BB6;
 }
 #main-container {
     display: flex;
@@ -26,16 +27,10 @@
 
 }
 #container {
-    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    scroll-snap-type: y mandatory;
-}
-.container-section-page {
-    display: block;
-    scroll-snap-align: center;
 }
 #welcome-page {
     display: flex;
@@ -122,7 +117,7 @@
 .welcome-page-body-center-container > span {
     display: block;
 }
-.profile-links {
+/* .profile-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +125,6 @@
     gap: 1rem;
 }
 .profile-link {
-    /* padding: 0.6rem 1.2rem; */
     border-radius: 0.5rem;
 }
 .profile-link > a {
@@ -146,11 +140,12 @@
 .leetcode {
     background-color: var(--leetcode-link-color);
     padding: 0.6rem 1.2rem;
-}
+} */
 
 
 #skills-page {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     width: 100%;
     background-color: var(--white-color);
     padding-top: 4rem;
@@ -221,7 +216,8 @@
 
 
 #projects-page {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     width: 100%;
     background-color: var(--black-color);
     padding-top: 4rem;
@@ -269,7 +265,7 @@
     height: 100%;
     background-color: var(--black-color);
     border-radius: 1rem;
-    padding: 0.7rem;
+    padding: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -328,6 +324,72 @@
     background-color: var(--ongoing-color);
     color: var(--black-color);
 }
+
+
+#contact-page {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    min-height: 100vh;
+    max-height: max-content;
+    width: 100%;
+    background-color: var(--white-color);
+    padding-top: 4rem;
+}
+#contact-page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+#contact-page-header-text {
+    color: var(--black-color);
+}
+#contact-page-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.contact-page-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+}
+.contact-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--purple-color);
+    width: 50%;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+.contact-body-logo {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    width: max-content;
+    border-left: 5px solid var(--white-color);
+}
+.contact-body-logo a, .contact-body-content a {
+    text-decoration: none;
+    width: 100%;
+    color: var(--white-color);
+}
+
 @media screen and (width > 1000px) {
     #container {
         width: 100vw;
@@ -339,7 +401,7 @@
     .skills-page-tags {
         font-size: 3vw;
     }
-    .section-header-text {
+    .section-header-text, .contact-page-header-text {
         font-size: 7vw;
     }
 }
@@ -355,8 +417,30 @@
     .skills-page-tags {
         font-size: 4vw;
     }
-    .section-header-text {
+    .section-header-text, .contact-page-header-text {
         font-size: 10vw;
+    }
+    .contact-body {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (width <= 550px) {
+    .contact-body {
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.4rem;
+    }
+    .contact-body-logo {
+        border-radius: 0.4rem;
+        width: max-content;
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-top: 5px solid var(--white-color);
+    }
+    .contact-body-content {
+        word-break: break-all;
     }
 }
 @media screen and (width < 400px) {
@@ -372,7 +456,7 @@
         font-weight: 600;
         text-transform: capitalize;
     }
-    #welcome-page-header-text {
+    #welcome-page-header-text, .contact-page-header-text {
         font-weight: 800;
         text-transform: capitalize;
         color: var(--white-color);
@@ -380,7 +464,7 @@
     .skills-page-tags {
         font-size: 5vw;
     }
-    .section-header-text {
+    .section-header-text, .contact-page-header-text {
         font-size: 13vw;
     }
     .skill-page-tags-section-header {
