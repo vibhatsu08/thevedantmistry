@@ -19,6 +19,11 @@
     --github-link-color: #7678ED;
     --leetcode-link-color: #FF8552;
     --purple-color: #5F4BB6;
+
+    --email-background-color: #FE5F55; 
+    --github-background-color: #2F4858;
+    --leetcode-background-color: #E8985E;
+    --linkedin-background-color: #3E92CC;
 }
 #main-container {
     display: flex;
@@ -388,6 +393,18 @@
     text-decoration: none;
     width: 100%;
     color: var(--white-color);
+}
+.email {
+    background-color: var(--email-background-color);
+}
+.github {
+    background-color: var(--github-background-color);
+}
+.leetcode {
+    background-color: var(--leetcode-background-color);
+}
+.linkedin {
+    background-color: var(--linkedin-background-color);
 }
 
 @media screen and (width > 1000px) {
