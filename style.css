@@ -122,31 +122,6 @@
 .welcome-page-body-center-container > span {
     display: block;
 }
-/* .profile-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
-}
-.profile-link {
-    border-radius: 0.5rem;
-}
-.profile-link > a {
-    text-decoration: none;
-    color: var(--black-color);
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.github {
-    background-color: var(--github-link-color);
-    padding: 0.6rem 1.2rem;
-}
-.leetcode {
-    background-color: var(--leetcode-link-color);
-    padding: 0.6rem 1.2rem;
-} */
-
 
 #skills-page {
     min-height: 100vh;
