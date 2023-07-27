@@ -7,6 +7,10 @@
     font-family: 'Outfit', sans-serif;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 :root {
     --black-color: #23272b;
     --gray-color: #42464a;
@@ -29,7 +33,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.container-section-page {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 #container {
     display: flex;
