@@ -12,6 +12,9 @@ html {
 }
 
 :root {
+    --scroll-top-top-background-color: #171D1C; 
+    --scroll-top-top-color: #EFE9F4;
+
     --black-color: #23272b;
     --gray-color: #42464a;
     --white-color: #EDF2F4;
@@ -29,6 +32,24 @@ html {
     --leetcode-background-color: #E8985E;
     --linkedin-background-color: #3E92CC;
 }
+#scrollToTop {
+    display: block;
+    position: fixed;
+    text-transform: capitalize;
+    opacity: 0.6;
+    bottom: 2vh;
+    right: 2vw;
+    z-index: 99;
+    font-size: 18px;
+    border: 0.1rem solid var(--scroll-top-top-color);
+    outline: none;
+    background-color: var(--scroll-top-top-background-color);
+    color: var(--scroll-top-top-color);
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2rem var(--black-color);
+}
 #main-container {
     display: flex;
     justify-content: center;
@@ -36,7 +57,6 @@ html {
 }
 .container-section-page {
     scroll-snap-align: start;
-    scroll-snap-stop: always;
 }
 #container {
     display: flex;
